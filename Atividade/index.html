@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>h&e - empresa de serviço de Hidráulica e Eletricidade</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="/images.png" type="image/x-icon">
+    <script src="script.js" defer></script>
+</head>
+<body> 
+    <header>
+            <a href="#"><p class="header">Sobre Nós</p></a>
+            <a href="#"><p class="header">Minhas Solicitações</p></a>
+            <a href="#"><p class="header">Ajuda</p></a>
+    </header>
+    <div class="main">
+        <form>
+            <label class="label">
+                <span>Serviços</span>
+                <br>
+                <select>
+                    <option value=""><p>Selecione</p></option>
+                    <option value="Serviços Hidráulicos"><p>Serviços Hidráulicos</p></option>
+                    <option value="Serviços Elétricos"><p>Serviços Elétricos</p></option>
+                </select>
+            </label>
+            <br>
+            <label class="label">
+                <span>Pagamento</span>
+                <br>
+                <select>
+                    <option value="">Selecione</option>
+                    <option value="Cartão"><p>Cartão</p></option>
+                    <option value="Pix"><p>Pix</p></option>
+                    <option value="Boleto"><p>Boleto</p></option>
+                </select>
+            </label>
+            <br>
+            <button id="find-me">Confirmar Localização</button><br />
+            <p id="status"></p>
+            <a id="map-link" target="_blank"></a>
+            <br>
+            <label class="confirm">
+                <span>A localização está correta ?</span>
+                <span>Sim</span>
+                <input class="check" type="radio" name="option" id="" value="sim">
+                <span>Não</span>
+                <input class="check" type="radio" name="option" id="" value="nao">
+            </label>
+            <br>
+            <input class="submit" type="submit" value="Solicitar Serviços" onclick="solicitado()">
+        </form>
+    </div>
+</body>
